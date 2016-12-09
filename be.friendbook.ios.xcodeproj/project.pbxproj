@@ -12,9 +12,11 @@
 		704156ED1DFB402C005898B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704156EB1DFB402C005898B9 /* Main.storyboard */; };
 		704156EF1DFB402C005898B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 704156EE1DFB402C005898B9 /* Assets.xcassets */; };
 		704156F21DFB402C005898B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704156F01DFB402C005898B9 /* LaunchScreen.storyboard */; };
+		72BDFBE5D733202311A0EA6A /* Pods_be_friendbook_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54477C7A049BBED5532337E9 /* Pods_be_friendbook_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54477C7A049BBED5532337E9 /* Pods_be_friendbook_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_be_friendbook_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		704156E41DFB402C005898B9 /* be.friendbook.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = be.friendbook.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704156E71DFB402C005898B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		704156E91DFB402C005898B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		704156EE1DFB402C005898B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		704156F11DFB402C005898B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		704156F31DFB402C005898B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6A13B6A55F5FA5B1897EB90 /* Pods-be.friendbook.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be.friendbook.ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-be.friendbook.ios/Pods-be.friendbook.ios.release.xcconfig"; sourceTree = "<group>"; };
+		AA6C9DC3D732A21128C38245 /* Pods-be.friendbook.ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-be.friendbook.ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-be.friendbook.ios/Pods-be.friendbook.ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72BDFBE5D733202311A0EA6A /* Pods_be_friendbook_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		179ACF62E1FAA5FF910B21C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA6C9DC3D732A21128C38245 /* Pods-be.friendbook.ios.debug.xcconfig */,
+				A6A13B6A55F5FA5B1897EB90 /* Pods-be.friendbook.ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		704156DB1DFB402C005898B9 = {
 			isa = PBXGroup;
 			children = (
 				704156E61DFB402C005898B9 /* be.friendbook.ios */,
 				704156E51DFB402C005898B9 /* Products */,
+				179ACF62E1FAA5FF910B21C1 /* Pods */,
+				EEC88023CE7D8B93D7619285 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = be.friendbook.ios;
 			sourceTree = "<group>";
 		};
+		EEC88023CE7D8B93D7619285 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54477C7A049BBED5532337E9 /* Pods_be_friendbook_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 704156F61DFB402C005898B9 /* Build configuration list for PBXNativeTarget "be.friendbook.ios" */;
 			buildPhases = (
+				F6F761E85EAA78A4C348081C /* [CP] Check Pods Manifest.lock */,
 				704156E01DFB402C005898B9 /* Sources */,
 				704156E11DFB402C005898B9 /* Frameworks */,
 				704156E21DFB402C005898B9 /* Resources */,
+				0F431AC5A9CAFDD2A60AEBEB /* [CP] Embed Pods Frameworks */,
+				1551CFAD9996332B7AE2682E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F431AC5A9CAFDD2A60AEBEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-be.friendbook.ios/Pods-be.friendbook.ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1551CFAD9996332B7AE2682E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-be.friendbook.ios/Pods-be.friendbook.ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6F761E85EAA78A4C348081C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		704156E01DFB402C005898B9 /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		704156F71DFB402C005898B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6C9DC3D732A21128C38245 /* Pods-be.friendbook.ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = be.friendbook.ios/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		704156F81DFB402C005898B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6A13B6A55F5FA5B1897EB90 /* Pods-be.friendbook.ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = be.friendbook.ios/Info.plist;
