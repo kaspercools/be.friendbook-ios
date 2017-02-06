@@ -1,0 +1,6 @@
+framework module Pods_be_friendbook_ios {
+  umbrella header "Pods-be.friendbook.ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
